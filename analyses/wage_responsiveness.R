@@ -1,7 +1,8 @@
 ### Load required packages
 require(XML)
 require(lubridate)
-require(quandl)
+require(Quandl)
+require(reshape)
 require(arm)
 
 ### Load lists of results saved from /scrape
