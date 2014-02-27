@@ -24,9 +24,8 @@ inflationtimeseries$year<-year(inflationtimeseries$Year)
 inflationtimeseries$Term<-"inflation"
 
 
-realinflation<-read.csv('http://www.quandl.com/api/v1/datasets/UKONS/LMS_MGSX_M.csv?&trim_start=1971-02-28&trim_end=2013-11-30&sort_order=desc', colClasses=c('Year'='Date'))
-realinflation$year<-year(realinflation$Year)
-realinflation$year<-substr(realinflation$year, start=1, stop=4)
+realinflation<-read.csv('http://www.quandl.com/api/v1/datasets/UKONS/MM23_D7G7_M.csv?&trim_start=1989-01-31&trim_end=2014-01-31&sort_order=desc', colClasses=c('Date'='Date'))
+realinflation$year<-substr(realinflation$Date, start=1, stop=4)
 realinflation<-aggregate(realinflation, by=list(realinflation$year), mean)
 realinflation$year<-realinflation$Group.1
 

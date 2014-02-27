@@ -26,8 +26,8 @@ Unemploymenttimeseries$Term<-"Unemployment"
 
 realunemployment<-read.csv('http://www.quandl.com/api/v1/datasets/UKONS/LMS_MGSX_M.csv?&trim_start=1971-02-28&trim_end=2013-11-30&sort_order=desc', colClasses=c('Year'='Date'))
 realunemployment$year<-year(realunemployment$Year)
-realunemployment$year<-substr(realunemployment$year, start=1, stop=4)
-realunemployment<-aggregate(realunemployment, by=list(realunemployment$year), mean)
+realunemployment$Year<-substr(realunemployment$year, start=1, stop=4)
+realunemployment<-aggregate(realunemployment, by=list(realunemployment$Year), mean)
 realunemployment$year<-realunemployment$Group.1
 
 df<-merge(Unemploymenttimeseries, realunemployment, by="year")
