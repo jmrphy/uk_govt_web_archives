@@ -37,5 +37,5 @@ df<-melt(df, id="year")
 
 png("graphs/wage_responsiveness.png")
 qplot(year, value, data=df, geom="line", colour=variable,
-      main="Real Wages and UK Gov't Web Mentions of \"Wage\" (Standardized)") + theme_bw()
+      main="Real Wages and UKGWA Mentions of \"Wage\"") + theme_bw()
 dev.off()
