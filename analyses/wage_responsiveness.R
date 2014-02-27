@@ -36,7 +36,7 @@ df<-melt(df, id="year")
 #df$year<-substr(df$year, start=1, stop=4)
 #df$year<-year(df$year)
 
-png("graphs/wage_responsiveness.png")
+png("graphs/wage_responsiveness.png", width = 600, height = 480)
 qplot(year, value, data=df, geom="line", colour=variable,
       main="Real Wages and UKGWA Mentions of \"Wage\"") + theme_bw()
 dev.off()

@@ -39,7 +39,7 @@ df<-melt(df, id="year")
 #df$year<-substr(df$year, start=1, stop=4)
 #df$year<-year(df$year)
 
-png("graphs/Unemployment_responsiveness.png")
+png("graphs/unemployment_responsiveness.png", width = 600, height = 480)
 qplot(year, value, data=df, geom="line", colour=variable,
       main="Real unemployment and UKGWA Mentions of \"Unemployment\"") + theme_bw()
 dev.off()
