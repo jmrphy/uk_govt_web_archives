@@ -6,3 +6,8 @@ URL: http://www.measuringworth.com/ukearncpi/
 ### Unemployment data are from United Kingdom Office of National Statistics via Quandl
 - http://www.quandl.com/UKONS/LMS_MGSX_M-LFS-Unemployment-rate-UK-All-Aged-16-and-over-SA-Monthly
 - http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=lms
+
+
+### Known issues, problems, and future work
+
+Real economic data reflect annual averages, whereas mention-count data reflect annual totals. This should be kept in mind when viewing the graphs.
