@@ -73,4 +73,4 @@ df<-rbind(wagetimeseries,profittimeseries,unemploymenttimeseries, inflationtimes
 require(ggplot2)
 png("graphs/term_comparison_graph.png")
 qplot(Year, Freq, data=df, geom="line", colour=Term, main="Frequency of Economic Terms Across All UK Gov't Websites") + theme_bw()
-png("mygraph.png")
+dev.off()
