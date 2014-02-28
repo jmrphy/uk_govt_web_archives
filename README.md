@@ -20,3 +20,13 @@ Again, **the graphs below are purely exploratory proofs of concept**. There are 
 
 
 ![Comparison of term frequencies](https://raw.github.com/jmrphy/uk_govt_web_archives/master/graphs/term_comparison_graph.png)
+
+![Unemployment](https://raw.github.com/jmrphy/uk_govt_web_archives/master/graphs/unemployment_responsiveness.png)
+
+![Inflation](https://raw.github.com/jmrphy/uk_govt_web_archives/master/graphs/inflation_responsiveness.png)
+
+![Wage](https://raw.github.com/jmrphy/uk_govt_web_archives/master/graphs/wage_responsiveness.png)
+
+![Wage on PM's website](https://raw.github.com/jmrphy/uk_govt_web_archives/master/graphs/public_wage.png)
+
+![Globalisation on PM's website](https://raw.github.com/jmrphy/uk_govt_web_archives/master/graphs/public_globalisation.png)
